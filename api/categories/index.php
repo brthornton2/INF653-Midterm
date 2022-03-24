@@ -9,8 +9,9 @@
     if ($method === 'PUT'){
       require('update.php');
     }
-    if ($method === 'GET'){
+    if ($method === 'GET' && isset($_GET['id'])){
       require('read_single.php');
+      die();
     }
     if ($method === 'GET'){
       require('read.php');
