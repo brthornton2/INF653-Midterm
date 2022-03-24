@@ -20,3 +20,6 @@
     );
 
     print_r(json_encode($category_arr));
+    if(empty($category_arr){
+        echo "CategoryId not found";
+    }
