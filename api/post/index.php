@@ -9,6 +9,14 @@
     if ($method === 'PUT'){
       require('update.php');
     }
-    elseif ($method === 'GET' && isset){
+    elseif ($method === 'GET' && isset($_GET['id'])){
+      require('read_single.php');
+    elseif ($method === 'GET'){
       require('read.php');
+    elseif ($method === 'DELETE'){
+      require('delete.php');
+    elseif ($method === 'POST'){
+      require('create.php');
+    
+    
     
