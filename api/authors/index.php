@@ -11,14 +11,14 @@
     }
     if ($method === 'GET' && isset($_GET['id'])){
       require('read_single.php');
+    }
     if ($method === 'GET'){
       require('read.php');
+    }
     if ($method === 'DELETE'){
       require('delete.php');
+    }
     if ($method === 'POST'){
       require('create.php');
-    else{
-      echo "nothing";
-      
-     }
+    }
     
