@@ -5,4 +5,10 @@
     if ($method === 'OPTIONS') {
     header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
     header('Access-Control-Allow-Headers: Origin, Accept, Content-Type, X-Requested-With');
-}
+    }
+    if ($method === 'PUT'){
+      require('update.php');
+    }
+    elseif ($method === 'GET' && isset){
+      require('read.php');
+    
