@@ -7,14 +7,14 @@
     header('Access-Control-Allow-Headers: Origin, Accept, Content-Type, X-Requested-With');
     }
     if ($method === 'PUT'){
-      require('update.php');
+      include('update.php');
     }
     elseif ($method === 'GET' && isset($_GET['id'])){
-      require('read_single.php');
+      include('read_single.php');
     elseif ($method === 'GET'){
-      require('read.php');
+      include('read.php');
     elseif ($method === 'DELETE'){
-      require('delete.php');
+      include('delete.php');
     elseif ($method === 'POST'){
-      require('create.php');
+      include('create.php');
     
