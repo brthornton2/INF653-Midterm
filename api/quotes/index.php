@@ -9,7 +9,7 @@
     if ($method === 'PUT'){
       require('update.php');
     }
-    if ($method === 'GET'){
+    if ($method === 'GET' && isset($_GET['id'])){
       require('read_single.php');
     }
     if ($method === 'GET'){
