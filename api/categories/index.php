@@ -5,4 +5,16 @@
     if ($method === 'OPTIONS') {
     header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
     header('Access-Control-Allow-Headers: Origin, Accept, Content-Type, X-Requested-With');
-}
+    }
+    if ($method === 'PUT'){
+      require('update.php');
+    }
+    elseif ($method === 'GET' && isset($_GET['id'])){
+      require('read_single.php');
+    elseif ($method === 'GET'){
+      require('read.php');
+    elseif ($method === 'DELETE'){
+      require('delete.php');
+    elseif ($method === 'POST'){
+      require('create.php');
+    
