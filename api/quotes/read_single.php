@@ -23,6 +23,6 @@
 
     print_r(json_encode($quote_arr));
 
-    if(empty($quote_arr){
+    if(empty($quote_arr)){
         echo "No quotes found";
     }
