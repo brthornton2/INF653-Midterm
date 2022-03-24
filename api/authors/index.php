@@ -12,7 +12,7 @@
     elseif ($method === 'GET' && isset($_GET['id'])){
       require('read_single.php');
     elseif ($method === 'GET'){
-      echo "ya mum";
+      require('read.php');
     elseif ($method === 'DELETE'){
       require('delete.php');
     elseif ($method === 'POST'){
