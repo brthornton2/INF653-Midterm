@@ -11,6 +11,7 @@
     }
     if ($method === 'GET' && isset($_GET['id'])){
       require('read_single.php');
+      die;
     }
     if ($method === 'GET'){
       require('read.php');
