@@ -20,3 +20,6 @@
     );
 
     print_r(json_encode($author_arr));
+    if(empty($author_arr){
+        echo "authorId not found";
+    }
