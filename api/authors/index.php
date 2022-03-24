@@ -12,7 +12,7 @@
     elseif ($method === 'GET' && isset($_GET['id'])){
       require('read_single.php');
     elseif ($method === 'GET'){
-      header("read.php");
+      header(Location: "read.php");
     elseif ($method === 'DELETE'){
       require('delete.php');
     elseif ($method === 'POST'){
